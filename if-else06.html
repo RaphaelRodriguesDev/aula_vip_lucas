@@ -1,0 +1,41 @@
+<script>
+  const situacao = ["APROVADO", "EM RECUPERAÇÃO", "REPROVADO"]
+  let qtdNotas = Number(prompt("Digite a quantidade de notas: "))
+  const notas = [];
+  let soma = 0;
+  let media = somarNotas(soma) / notas.length;
+  
+  function armazenarNotas(qtd) {
+    for (let i = 0; i < qtd; i++) {
+      let nota = Number(prompt(`Digite a nota ${i + 1}:`));
+      notas.push(nota);
+    }
+  }
+
+  function somarNotas(soma) {
+    for (let i = 0; i < notas.length; i++) {
+      soma += notas[i];
+    }
+  }
+
+  function exibirDados () {
+    armazenarNotas(qtdNotas)
+    document.write("<br> ========================= <br>")
+    document.write(`A media do aluno é: ${media} <br>`)
+    document.write("========================= <br>")
+  
+    if (media >= 6) {
+      document.write(`Situação do aluno:<h2 style="color: #00FF00;">${situacao[0]}</h2>`);
+  
+    } else if (media < 6 && media >= 5) {
+      document.write(`Situação do aluno:<h2 style="color: #FFFF00;">${situacao[1]}</h2>`);
+    } else {
+      document.write(`Situação do aluno:<h2 style="color: #FF0000;">${situacao[2]}`);
+    }
+  }
+
+  exibirDados();
+
+  
+
+</script>
