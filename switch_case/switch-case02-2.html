@@ -1,0 +1,17 @@
+<script>
+  const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]
+  const diaAtual = new Date().getDay();
+
+  for (let i = 0; i < dias.length; i++) {
+
+    setTimeout(() => {
+      if (i === diaAtual) {
+        document.write(`<span style="color: red; font-weight: bold;">Dia de Hoje => ${dias[i]} <=</span> <br>`);
+      } else {
+        document.write(dias[i] + "<br>");
+      }
+    }, i * 1000);
+
+  }
+
+</script>

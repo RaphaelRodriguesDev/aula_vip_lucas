@@ -1,0 +1,18 @@
+<script>
+  const sinal = prompt("Escolha a cor do sinal(verde, vermelho, amarelo)").trim().toLowerCase()
+
+  switch (sinal) {
+    case "green":
+      document.write(`<h2 style="color: ${sinal}">SIGA</h2>`);
+      break;
+    case "red":
+      document.write(`<h2 style="color: ${sinal}">PARE</h2>`);
+      break;
+    case "yellow":
+      document.write(`<h2 style="color: ${sinal}">ATENÇÃO</h2>`);
+      break;
+    default:
+      document.write('<h2 style="color: orange">SINAL INVÁLIDO</h2>');
+  }
+
+</script>
