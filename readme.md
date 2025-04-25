@@ -4,9 +4,5 @@
 
 ### Todas as aulas
 
-
 - If Else
 - Switch Case
-
-
-
