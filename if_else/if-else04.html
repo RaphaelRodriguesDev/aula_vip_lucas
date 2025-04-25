@@ -1,0 +1,32 @@
+<script>
+
+  const usuarioCadastrato = {
+    login: "ADM",
+    senha: "1234ABCD"
+  }
+
+  // let senhaCorreta = "1234ABCD";
+  let loginDigitado = prompt("Login: ").trim().toUpperCase();
+  let senhaDigitada = prompt("Senha: ").trim();
+
+  // if (senhaDigitada === usuarioCadastrato.senha && loginDigitado === usuarioCadastrato.login) {
+  //   document.write("✅ Acesso Permitido");
+  // } else {
+  //   if (senhaDigitada !== usuarioCadastrato.senha) {
+  //     document.write("❌ SENHA INCORRETA");
+  //   } else {
+  //     document.write("❌ LOGIN INCORRETO");
+  //   }
+  // }
+
+  if (senhaDigitada === usuarioCadastrato.senha && loginDigitado === usuarioCadastrato.login) {
+    document.write("✅ Acesso Permitido");
+  } else if (senhaDigitada !== usuarioCadastrato.senha) {
+      document.write("❌ SENHA INCORRETA");
+  } else {
+      document.write("❌ LOGIN INCORRETO");
+  }
+  
+
+
+</script>

@@ -1,0 +1,26 @@
+<script>
+  const situacao = ["APROVADO", "EM RECUPERAÇÃO", "REPROVADO"]
+  let nota1 = Number(prompt("Digite a primeira nota: "))
+  let nota2 = Number(prompt("Digite a segunda nota: "))
+  let nota3 = Number(prompt("Digite a terceira nota: "))
+  let nota4 = Number(prompt("Digite a quarta nota: "))
+
+  const notas = [nota1, nota2, nota3, nota4];
+  const totalNotas = notas.length
+
+  let media = (nota1 + nota2 + nota3 + nota4) / totalNotas
+
+  document.write("<br> ========================= <br>")
+  document.write(`A media do aluno é: ${media} <br>`)
+  document.write("========================= <br>")
+
+  if (media >= 6) {
+    document.write(`Situação do aluno:<h2 style="color: #00FF00;">${situacao[0]}</h2>`);
+
+  } else if (media < 6 && media >= 5) {
+    document.write(`Situação do aluno:<h2 style="color: #FFFF00;">${situacao[1]}</h2>`);
+  } else {
+    document.write(`Situação do aluno:<h2 style="color: #FF0000;">${situacao[2]}`);
+  }
+
+</script>
