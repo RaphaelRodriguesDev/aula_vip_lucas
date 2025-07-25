@@ -1,3 +1,8 @@
-# Arquivo Readme
+# ✅Aulas Vip Lucas
 
-## Este é um arquivo sobre o repositório
+## Aulas Vip para o aluno Lucas
+
+### Todas as aulas
+
+- If Else
+- Switch Case
