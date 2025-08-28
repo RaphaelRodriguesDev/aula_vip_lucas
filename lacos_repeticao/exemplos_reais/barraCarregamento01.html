@@ -1,0 +1,51 @@
+<!-- <script>
+  const percentual = 80;
+  const maxBarras = 10;
+  let barra = "";
+  let i = 0;
+  
+  // let r = Math.floor(Math.random() * 100);
+  // console.log(r);
+  
+  while (i < maxBarras) {
+    if (i < Math.floor(percentual / 10)) {
+      barra += "█";
+    } else {
+      barra += "░";
+    }
+    i++;
+  }
+  document.write(`Progresso:${barra} ${percentual}%`);
+</script> -->
+
+<script>
+    let percentual = 0;
+    const maxBarras = 10;
+    
+    function updateProgress() {
+      let barra = "";
+      let i = 0;
+      
+      while (i < maxBarras) {
+        if (i < Math.floor(percentual / 10)) {
+          barra += "█";
+        } else {
+          barra += "░";
+        }
+        i++;
+      }
+      
+      // Clear the page and write the new progress
+      document.open();
+      document.write(`Progresso: ${barra} ${percentual}%`);
+      document.close();
+      
+      percentual += 10; // Increment by 10% to fill one block per second
+      if (percentual > 100) {
+        percentual = 0; // Reset to 0% to loop
+      }
+    }
+    
+    updateProgress(); // Initial call
+    setInterval(updateProgress, 1000); // Update every 1 second
+  </script>

@@ -1,0 +1,21 @@
+<script>
+  const percentual = 70;
+  let elapsedTime = 0;
+  let maxTime = 10; // Tempo máximo em segundos
+  let isReady = false;
+
+  do {
+    elapsedTime++;
+    document.write(`Verificando status... ${elapsedTime}s <br>`);
+
+    // Simula chance de 70% de o serviço estar pronto
+    if (Math.random() * 100 <= percentual) {
+      isReady = true;
+      document.write("Serviço está pronto!<br>");
+    }
+  } while (!isReady && elapsedTime < maxTime);
+
+  if (!isReady) {
+    document.write("Tempo limite atingido. Serviço não está pronto.<br>");
+  }
+</script>

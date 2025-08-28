@@ -1,0 +1,18 @@
+<script>
+  const percentual = 70; // Limite máximo de uso
+  let currentUsage = 20; // Uso inicial de CPU/Memória (%)
+  let isPaused = false;
+
+  while (currentUsage <= percentual && !isPaused) {
+    console.log(`Uso atual: ${currentUsage}%`);
+    currentUsage += Math.random() * 20; // Simula aumento no uso de recursos// Simula uma condição de pausa (ex.: administrador intervém)
+    if (Math.random() < 0.1) { // 10% de chance de pausar
+      isPaused = true;
+      console.log("Processamento pausado pelo administrador.");
+    }
+  }
+
+  if (currentUsage > percentual) {
+    console.log(`Limite de ${percentual}% excedido. Uso atual: ${currentUsage.toFixed(2)}%`);
+  }
+</script>
