@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Projeto Completo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./portfolio.html">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Fale Conosco</h2>
+            <p>Estamos aqui para ajudar você</p>
+        </section>
+
+        <section class="formulario-demo">
+            <h3>Formulário Completo de Contato</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento">
+                </div>
+
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="outro" name="sexo" value="outro">
+                    <label for="outro">Outro</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione seu estado</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="es">Espírito Santo</option>
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option value="pr">Paraná</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interesses</label>
+                    <input type="checkbox" id="html" name="interesses" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="interesses" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="interesses" value="js">
+                    <label for="js">JavaScript</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="nivel">Nível de Experiência</label>
+                    <input type="range" id="nivel" name="nivel" min="1" max="10" value="5">
+                    <small>1 (Iniciante) - 10 (Avançado)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="cor-favorita">Cor Favorita</label>
+                    <input type="color" id="cor-favorita" name="cor-favorita" value="#667eea">
+                </div>
+
+                <div class="form-group">
+                    <label for="arquivo">Anexar Currículo</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos e condições *</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Desejo receber newsletter</label>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset">Limpar Formulário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Completo - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

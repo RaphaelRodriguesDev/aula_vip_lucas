@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Completo - Aula 5</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Projeto Completo HTML & CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+                <li><a href="./pages/portfolio.html">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bem-vindo ao Nosso Site</h2>
+            <p>Este projeto demonstra todos os conceitos aprendidos nas aulas anteriores</p>
+        </section>
+
+        <section class="conteudo">
+            <article>
+                <h3>Conceitos Aplicados</h3>
+                <ul>
+                    <li>HTML Semântico</li>
+                    <li>Formulários Completos</li>
+                    <li>Tabelas Estruturadas</li>
+                    <li>CSS Responsivo</li>
+                </ul>
+            </article>
+
+            <aside>
+                <h3>Tabela de Especificações</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnologia</th>
+                            <th>Versão</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>5</td>
+                            <td class="status-ok">✓</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>3</td>
+                            <td class="status-ok">✓</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>ES6+</td>
+                            <td class="status-pending">Em breve</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </section>
+
+        <section class="formulario-demo">
+            <h3>Formulário de Contato</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Desejo receber newsletter</label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Completo - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
