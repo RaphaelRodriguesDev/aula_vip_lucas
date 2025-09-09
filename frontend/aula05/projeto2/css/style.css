@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quadrado {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  padding: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border: dashed 5px black;
+  display: inline-block;
+}
+
+.azul {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.vermelho {
+  background: #ff0000aa;
+}
+
+.amarelo {
+  background: #FFFF00AA;
+  color: #101010;
+}
