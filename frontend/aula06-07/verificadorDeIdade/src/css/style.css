@@ -9,25 +9,26 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: blueviolet;
-  font: normal 15px Arial, Helvetica, sans-serif;
+  background: blueviolet;
+  font: normal 15pt Arial;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
-header, footer {
+header,
+footer {
   color: white;
+  text-align: center;
 }
 
 section {
-  width: 80%;
-  padding: 15px;
-  /* margin: auto; */
-  background-color: #FFF;
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00000080;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px #00000088;
   text-align: center;
 }
 
